@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+   margin: 0;
+   padding: 0;
+   font-family: 'Open Sans', sans-serif;
+}
+
+ /* Navigation */
+
+ header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+ }
+
+ ul{
+    width: 24rem;
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ li{
+    list-style: none;
+ }
+
+ ul a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #112D4E;
+ }
+
+#heading{
+    font-size: 2.7rem;
+    height: 15rem;
+    background: lemonchiffon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #main{
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .projects-container{
+    background: lightyellow;
+    width: 25rem;
+    height: 29rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+ }
+
+ .box-foto{
+    height: 14rem;
+    background: url(img/deer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+ }
+
+ .box-label{
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+   
+ }
+
+ .box-circle{
+    width: 3.4rem;
+    height: 3.4rem;
+    background: lightcoral;
+    border: 0.3rem lightyellow solid;
+    border-radius: 50%;
+    position: absolute;
+    top: 12rem;
+    left: 11rem;
+
+ }
+
+ .box-link{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer{
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: lightgreen;
+}
