@@ -239,37 +239,50 @@ footer a:hover{
 
 
 @media(max-width: 750px){
-   header img{
-      margin-top: 0.5rem;
-      margin-left: 0;
-      
+   header{
+      justify-content: space-evenly;
    }
-   
-   ul {
+
+   header img{
+      width: 260px;
+      margin: 0.5rem 0 0 0;
+   }
+  
+  ul {
       display: none;
       flex-direction: column;
-      width: 6rem;
-      height: 10rem;
-      text-align: center;
+      width: 50%;
+      height: 100vh;
       position: absolute;
-      border-radius: 1rem;
-      background-color: #fff; /* Change to your desired background color */
-      right: 0;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-    }
+      background-color: #fff; 
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      top: -1.7rem;
+      left: 0;
+      opacity: 0.95;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+     
+  }
 
-   
+  li a{
+      margin-left: -2rem;
+      font-size: 1.2rem;
+  }
+
 
     .navbar-btn{
         display: block;
-        margin-right: 1rem;
-        margin-top:  1.5rem;
+        cursor: pointer;
+        margin-top:  1.3rem;
+        margin-right: 0.2rem;
      }
+
+  
 
     ul.show {
       display: flex;
-      margin-right: 4rem;
-      margin-top: 3.2rem;
+      align-items: center;
+      justify-content: space-evenly;
     }
     
 
