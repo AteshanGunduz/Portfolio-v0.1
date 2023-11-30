@@ -1012,7 +1012,7 @@ footer a:hover{
      }
 
      .container-text h1{
-        font-size: 1.2rem;
+        font-size: 1.35rem;
      }
 
      .container-text p{
@@ -1024,11 +1024,7 @@ footer a:hover{
     }
 
     .border-work{
-        position: absolute;
-        width: 5rem;
-        border-top: 0.27rem solid #57A0D3;
-        top: 6.5rem;
-        left: 7.5rem
+        display: none;
     }
     
     
