@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=,, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -11,27 +11,31 @@
     <title>Ateshan Website</title>
   </head>
   <body>
-    <header>
-      <a href="#"><img src="img/logo.png" alt="logo" width="300px" /></a>
-      <ul>
-        <li><a href="#">Home</a></li>
+    <header id="navbar">
+      <a href="index.html"><img src="img/logo.png" alt="logo" width="300px" /></a>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="navbar-btn" onclick="toggleNavbar()">
+        &#9776;
+      </div>
     </header>
+  
     <section id="welcome">
       <div class="wel-text">
         <div class="text-border"></div>
         <div>
-          <h1>I'am Ateshan</h1>
+          <h1>I'm Ateshan</h1>
           <p>Freelance Web & Mobile Designer</p>
         </div>
-        <button>Hire Me</button>
+        <a href="contact.html"><button>Hire Me</button></a>
         <div class="wel-links">
-          <a href=""><i class="fab fa-linkedin fa-xl"></i></a>
-          <a href=""><i class="fab fa-instagram fa-xl"></i></a>
-          <a href=""><i class="fab fa-medium fa-xl"></i></a>
+          <a href="https://www.linkedin.com/in/ate%C5%9Fhan-g%C3%BCnd%C3%BCz-84290a223/" target="_blank"><i class="fab fa-linkedin fa-xl"></i></a>
+          <a href="https://www.instagram.com/ateshangunduz/" target="_blank"><i class="fab fa-instagram fa-xl"></i></a>
+          <a href="https://medium.com/@atshn.gunduz" target="_blank"><i class="fab fa-medium fa-xl"></i></a>
         </div>
       </div>
       <div class="wel-photo">
@@ -40,24 +44,18 @@
     </section>
 
     <section id="about-me">
-      <div>
+      <div class="abt-left">
         <img src="img/about-foto.jpg" alt="about-photo" width="350px" />
       </div>
       <div class="abt-right">
         <h1>About</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure non eius
-          corrupti odio dolor ab distinctio pariatur rem consectetur harum cum
-          excepturi quas, voluptatibus tempore sunt ex voluptas, itaque
-          laboriosam.
+          Greetings! I'm Ateshan Gunduz, a passionate frontend developer with a creative spirit and a dedication to making meaningful digital experiences. With a deep love for web development, app design, and web design, I thrive on turning ideas into reality and crafting solutions that leave a lasting impression.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure non eius
-          corrupti odio dolor ab distinctio pariatur rem consectetur harum cum
-          excepturi quas, voluptatibus tempore sunt ex voluptas, itaque
-          laboriosam.
+          My journey in the digital realm began at BilgeAdam Akademi, where I earned a Frontend Development Certificate. Since then, I've been on an exciting path of exploration and innovation.
         </p>
-        <button>About Me</button>
+        <a href="about.html"><button>About Me</button></a>
       </div>
     </section>
 
@@ -70,9 +68,7 @@
           <h3>Web Development</h3>
           <div id="brd"></div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            nemo minus maxime officiis obcaecati commodi illo non fuga, libero
-            tenetur!
+            From static websites to dynamic web applications, I excel in developing responsive, user-friendly, and performance-driven websites. I ensure that your online presence is not only aesthetically pleasing but also functional and scalable.
           </p>
         </div>
         <div>
@@ -80,9 +76,7 @@
           <h3>Web Design</h3>
           <div id="brd"></div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            nemo minus maxime officiis obcaecati commodi illo non fuga, libero
-            tenetur!
+            A well-designed website is your digital storefront, and first impressions count. I specialize in creating visually stunning web designs that resonate with your brand, optimize user engagement, and foster trust. Your website will be as unique as your business.
           </p>
         </div>
         <div>
@@ -90,9 +84,7 @@
           <h3>App Design</h3>
           <div id="brd"></div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            nemo minus maxime officiis obcaecati commodi illo non fuga, libero
-            tenetur!
+            Crafting an exceptional user experience is at the heart of successful app design. I create visually appealing and intuitive mobile app interfaces that captivate users and enhance usability. Your app's design is a critical factor in its success, and I'm here to make it stand out.
           </p>
         </div>
       </div>
@@ -104,36 +96,32 @@
           <h1>Latest Works</h1>
           <div class="border-work"></div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-            dolores cupiditate recusandae delectus, vel ullam autem in illum
-            similique ipsum totam eius, maxime numquam blanditiis nam sequi
-            aliquam dignissimos fuga? ate recusandae delectus, vel ullam autem in illum
-            similique ipsum totam eius.
+            I take great pride in my creative journey and the opportunity to bring my ideas to life. Here are some of my most recent projects that I'm excited to share with you. Each of these represents a unique challenge and a chance to push the boundaries of innovation and design.
           </p>
           </p>
         </div>
         <div class="boxes">
-          <a href="" class="box1 the-box">
+          <a href="projects.html" class="box1 the-box">
             <div class="box-info">
-            <h3>Project Title</h3>
+            <h3>Stoodle-Landing</h3>
             
           </div>
           </a>
-          <a href="" class="box2 the-box">
+          <a href="projects.html" class="box2 the-box">
             <div class="box-info">
-              <h3>Project Title</h3>
+              <h3>Serbright-Login</h3>
               
             </div>
           </a>
-          <a href="" class="box3 the-box">
+          <a href="projects.html" class="box3 the-box">
             <div class="box-info">
-              <h3>Project Title</h3>
+              <h3>FellTrox-Landing</h3>
               
             </div>
           </a>
-          <a href="" class="box4 the-box">
+          <a href="projects.html" class="box4 the-box">
             <div class="box-info">
-              <h3>Project Title</h3>
+              <h3>TenClif-Landing</h3>
               
             </div>
           </a>
@@ -151,118 +139,196 @@
           <h1>Let's Get In Touch</h1>
           <div class="underline"></div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique possimus blanditiis deserunt fugiat et corrupti nam commodi consequuntur perspiciatis temporibus voluptate numquam aliquid, provident pariatur deleniti. Reprehenderit, aut dignissimos!
+            Thank you for exploring my portfolio and getting to know more about my work. I'm always excited to connect with like-minded individuals, potential collaborators, or anyone who shares a passion for creativity and innovation. 
           </p>
-          <button>Contact Me</button>
+          <a href="contact.html"><button>Contact Me</button></a>
         </div>
       </div>
     </section>
   </div>
 
-    <section id="blog">
-      <h1>Blogs</h1>
-      <div class="blog-container">
-        <div class="blog1 box">
-          <div class="article-foto"></div>
-          <div class="article-label">
-            <h3>Article Title</h3>
+
+   <!-- --------------- -->
+   <section id="bigcontainer">
+
+   <div class="section-title">
+    <h1>Blogs</h1>
+    <div class="underline2"></div>
+  </div>
+
+   <section class="section blog">
+    <!-- section title -->
+    
+    <!--end of section title -->
+    <div class="section-center blog-center">
+      <!-- single article -->
+      <div class="card">
+        <!-- front of the card -->
+        <div class="card-side card-front">
+          <img src="img/blog2.jpg" alt="" />
+          <div class="card-info">
+            <h4>media queries — flexbox</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque sapiente quam ipsa consequatur expedita, quis voluptas
-              minima ratione accusamus asperiores.
+              Flexbox not only allows you to create complex designs easier but also it is useful for responsive and flexible designs. Media queries on the other hand empower us...
             </p>
-          </div>
-          <div class="article-footer">
-            <a href=""><i class="fab fa-medium"></i></a>
-            <p>7 MIN READ</p>
+            <div class="card-footer">
+              <img src="img/foto.jpg" alt="author image" />
+              <p>7 min read</p>
+            </div>
           </div>
         </div>
-        <div class="blog2 box">
-          <div class="article-foto"></div>
-          <div class="article-label">
-            <h3>Article Title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque sapiente quam ipsa consequatur expedita, quis voluptas
-              minima ratione accusamus asperiores.
-            </p>
-          </div>
-          <div class="article-footer">
-            <a href=""><i class="fab fa-medium"></i></a>
-            <p>7 MIN READ</p>
-          </div>
-        </div>
-        <div class="blog3 box">
-          <div class="article-foto"></div>
-          <div class="article-label">
-            <h3>Article Title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque sapiente quam ipsa consequatur expedita, quis voluptas
-              minima ratione accusamus asperiores.
-            </p>
-          </div>
-          <div class="article-footer">
-            <a href=""><i class="fab fa-medium"></i></a>
-            <p>7 MIN READ</p>
-          </div>
-        </div>
-        <div class="blog4 box">
-          <div class="article-foto"></div>
-          <div class="article-label">
-            <h3>Article Title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque sapiente quam ipsa consequatur expedita, quis voluptas
-              minima ratione accusamus asperiores.
-            </p>
-          </div>
-          <div class="article-footer">
-            <a href=""><i class="fab fa-medium"></i></a>
-            <p>7 MIN READ</p>
-          </div>
-        </div>
-        <div class="blog5 box">
-          <div class="article-foto"></div>
-          <div class="article-label">
-            <h3>Article Title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque sapiente quam ipsa consequatur expedita, quis voluptas
-              minima ratione accusamus asperiores.
-            </p>
-          </div>
-          <div class="article-footer">
-            <a href=""><i class="fab fa-medium"></i></a>
-            <p>7 MIN READ</p>
-          </div>
-        </div>
-        <div class="blog6 box">
-          <div class="article-foto"></div>
-          <div class="article-label">
-            <h3>Article Title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque sapiente quam ipsa consequatur expedita, quis voluptas
-              minima ratione accusamus asperiores.
-            </p>
-          </div>
-          <div class="article-footer">
-            <a href=""><i class="fab fa-medium"></i></a>
-            <p>7 MIN READ</p>
-          </div>
+        <!-- card back  -->
+        <div class="card-side card-back">
+          <a href="https://medium.com/@atshn.gunduz/media-queries-flexbox-40bdaaecd1d2" target="_blank"><button class="btn">read more</button></a>
         </div>
       </div>
-    </section>
+      <!-- end of single article -->
+      <!-- single article -->
+      <div class="card">
+        <!-- front of the card -->
+        <div class="card-side card-front">
+          <img src="img/blog1.jpg" alt="" />
+          <div class="card-info">
+            <h4>var</h4>
+            <p>
+              With introduction of ES6 (ECMAScript) in 2015, let and const became the suggested options instead of using var. Why we stopped using var? There are several...
+            </p>
+            <div class="card-footer">
+              <img src="img/foto.jpg" alt="author image" />
+              <p>7 min read</p>
+            </div>
+          </div>
+        </div>
+        <!-- card back  -->
+        <div class="card-side card-back">
+          <a href="https://medium.com/@atshn.gunduz/var-6d0cce943534" target="_blank"><button class="btn">read more</button></a>
+        </div>
+      </div>
+      <!-- end of single article -->
+      <!-- single article -->
+      <div class="card">
+        <!-- front of the card -->
+        <div class="card-side card-front">
+          <img src="img/blog6.jpg" alt="" />
+          <div class="card-info">
+            <h4>Array Methods With for(){}</h4>
+            <p>
+              JavaScript has build-in array methods for various purposes. However for educational motives and complex purposes for loops is a must to know. 
+            </p>
+            <div class="card-footer">
+              <img src="img/foto.jpg" alt="author image" />
+              <p>7 min read</p>
+            </div>
+          </div>
+        </div>
+        <!-- card back  -->
+        <div class="card-side card-back">
+          <a href="https://medium.com/@atshn.gunduz/array-methods-with-for-loops-ff4cd1afe7bd" target="_blank"><button class="btn">read more</button></a>
+        </div>
+      </div>
+      <!-- end of single article -->
+      <!-- single article -->
+      <div class="card">
+        <!-- front of the card -->
+        <div class="card-side card-front">
+          <img src="img/blog3.jpg" alt="" />
+          <div class="card-info">
+            <h4>.forEach .map</h4>
+            <p>
+              JavaScript have a variety of methods with different purposes. Some of them may look similar but devil is in the details. Both iterates over arrays and apply an action...
+            </p>
+            <div class="card-footer">
+              <img src="img/foto.jpg" alt="author image" />
+              <p>7 min read</p>
+            </div>
+          </div>
+        </div>
+        <!-- card back  -->
+        <div class="card-side card-back">
+          <a href="https://medium.com/@atshn.gunduz/foreach-map-4dc8ef12aa5f" target="_blank"><button class="btn">read more</button></a>
+        </div>
+      </div>
+      <!-- end of single article -->
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="img/blog4.jpg" alt="" />
+            <div class="card-info">
+              <h4>function basicInfo(){}</h4>
+              <p>
+                Functions allows you to execute specific task and call it when task needs to be implemented. There are several options to declare a function in JavaScript. Most...
+              </p>
+              <div class="card-footer">
+                <img src="img/foto.jpg" alt="author image" />
+                <p>7 min read</p>
+              </div>
+            </div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <a href="https://medium.com/@atshn.gunduz/function-basicinfo-2d753482fd3c" target="_blank"><button class="btn">read more</button></a>
+          </div>
+        </div>
+        <!-- end of single article -->
+          <!-- single article -->
+      <div class="card">
+        <!-- front of the card -->
+        <div class="card-side card-front">
+          <img src="img/blog5.jpg" alt="" />
+          <div class="card-info">
+            <h4>callstack event loop micro-macro tasks</h4>
+            <p>
+              Event loop allow multiple computations to happen at the same time. When dealing with network requests, user input, and timers it is essential for operating...
+            </p>
+            <div class="card-footer">
+              <img src="img/foto.jpg" alt="author image" />
+              <p>7 min read</p>
+            </div>
+          </div>
+        </div>
+        <!-- card back  -->
+        <div class="card-side card-back">
+          <a href="https://medium.com/@atshn.gunduz/callstack-event-loop-micro-macro-tasks-a0964289ad2c" target="_blank"><button class="btn">read more</button></a>
+        </div>
+      </div>
+      <!-- end of single article -->
+    </div>
+  </section>
+
+</section>
+
+
+  <!-- --------------- -->
+  
     <footer>
       <div>
-        <a href=""><i class="fab fa-linkedin"></i></a>
-        <a href=""><i class="fab fa-instagram"></i></a>
-        <a href=""><i class="fab fa-medium"></i></a>
+        <a href="https://www.linkedin.com/in/ate%C5%9Fhan-g%C3%BCnd%C3%BCz-84290a223/" target="_blank"><i class="fab fa-linkedin fa-xl"></i></a>
+          <a href="https://www.instagram.com/ateshangunduz/" target="_blank"><i class="fab fa-instagram fa-xl"></i></a>
+          <a href="https://medium.com/@atshn.gunduz" target="_blank"><i class="fab fa-medium fa-xl"></i></a>
       </div>
       <div>
         <p>&copy; 2023 Ateshan Gunduz. All Rights Reserved</p>
       </div>
     </footer>
+
+    <script>
+        function toggleNavbar() {
+      const navbarUl = document.getElementById('menu');
+      navbarUl.classList.toggle('show');
+    }
+
+    window.onscroll = function() {
+      const navbar = document.getElementById('navbar');
+
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        navbar.classList.add('fixed');
+      } else {
+        navbar.classList.remove('fixed');
+      }
+    };
+
+      </script>
   </body>
+
 </html>

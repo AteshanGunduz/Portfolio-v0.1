@@ -11,33 +11,65 @@
     <title>Ateshan About</title>
   </head>
   <body>
-    <header>
-      <a href="#"><img src="/img/logo.png" alt="logo" width="350px" /></a>
-      <ul>
+    <header id="navbar">
+      <a href="index.html"
+        ><img src="img/logo.png" alt="logo" width="300px"
+      /></a>
+      <ul id="menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="navbar-btn" onclick="toggleNavbar()">&#9776;</div>
     </header>
     <article>
       <h1>About Me</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
-        rerum. Excepturi labore culpa accusamus, ipsa quod delectus voluptas,
-        quibusdam hic distinctio fugit tempore repellat minus voluptatibus
-        consectetur rerum officia magnam.
+        What sets me apart is my unwavering commitment to quality and detail. I
+        believe that the devil is in the details, and it's these details that
+        transform a good project into a remarkable one. I'm constantly driven to
+        stay at the forefront of the ever-evolving tech and design landscape to
+        ensure that my work is both current and future-proof.
       </p>
+      <p>JavaScript ReactJS Html Css Api Ajax Json</p>
     </article>
     <footer>
       <div>
-        <a href=""><i class="fab fa-linkedin"></i></a>
-        <a href=""><i class="fab fa-instagram"></i></a>
-        <a href=""><i class="fab fa-medium"></i></a>
+        <a
+          href="https://www.linkedin.com/in/ate%C5%9Fhan-g%C3%BCnd%C3%BCz-84290a223/"
+          target="_blank"
+          ><i class="fab fa-linkedin fa-xl"></i
+        ></a>
+        <a href="https://www.instagram.com/ateshangunduz/" target="_blank"
+          ><i class="fab fa-instagram fa-xl"></i
+        ></a>
+        <a href="https://medium.com/@atshn.gunduz" target="_blank"
+          ><i class="fab fa-medium fa-xl"></i
+        ></a>
       </div>
       <div>
         <p>&copy; 2023 Ateshan Gunduz. All Rights Reserved</p>
       </div>
     </footer>
+    <script>
+      function toggleNavbar() {
+        const navbarUl = document.getElementById('menu');
+        navbarUl.classList.toggle('show');
+      }
+
+      window.onscroll = function () {
+        const navbar = document.getElementById('navbar');
+
+        if (
+          document.body.scrollTop > 50 ||
+          document.documentElement.scrollTop > 50
+        ) {
+          navbar.classList.add('fixed');
+        } else {
+          navbar.classList.remove('fixed');
+        }
+      };
+    </script>
   </body>
 </html>

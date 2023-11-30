@@ -11,32 +11,73 @@
     <title>Ateshan About</title>
   </head>
   <body>
-    <header>
-      <a href="#"><img src="/img/logo.png" alt="logo" width="350px" /></a>
-      <ul>
+    <header id="navbar">
+      <a href="index.html"
+        ><img src="img/logo.png" alt="logo" width="300px"
+      /></a>
+      <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="navbar-btn" onclick="toggleNavbar()">&#9776;</div>
     </header>
     <article>
       <h1>Contact Me</h1>
       <p>
         If you are looking to get ahold of me, you can send me an email at
-        @YOUR_EMAIL
+        <span
+          ><a href="mailto:“atshn.gunduz@gmail.com”"
+            >atshn.gunduz@gmail.com</a
+          ></span
+        >
       </p>
-      <p>You can also reach me on Twitter at @YOUR_SOCIAL_MEDIA</p>
+      <p>
+        You can also reach me on Instagram at
+        <span
+          ><a href="https://www.instagram.com/ateshangunduz/" target="_blank"
+            >ateshangunduz</a
+          ></span
+        >
+      </p>
     </article>
     <footer>
       <div>
-        <a href=""><i class="fab fa-linkedin"></i></a>
-        <a href=""><i class="fab fa-instagram"></i></a>
-        <a href=""><i class="fab fa-medium"></i></a>
+        <a
+          href="https://www.linkedin.com/in/ate%C5%9Fhan-g%C3%BCnd%C3%BCz-84290a223/"
+          target="_blank"
+          ><i class="fab fa-linkedin fa-xl"></i
+        ></a>
+        <a href="https://www.instagram.com/ateshangunduz/" target="_blank"
+          ><i class="fab fa-instagram fa-xl"></i
+        ></a>
+        <a href="https://medium.com/@atshn.gunduz" target="_blank"
+          ><i class="fab fa-medium fa-xl"></i
+        ></a>
       </div>
       <div>
         <p>&copy; 2023 Ateshan Gunduz. All Rights Reserved</p>
       </div>
     </footer>
+    <script>
+      function toggleNavbar() {
+        const navbarUl = document.getElementById('menu');
+        navbarUl.classList.toggle('show');
+      }
+
+      window.onscroll = function () {
+        const navbar = document.getElementById('navbar');
+
+        if (
+          document.body.scrollTop > 50 ||
+          document.documentElement.scrollTop > 50
+        ) {
+          navbar.classList.add('fixed');
+        } else {
+          navbar.classList.remove('fixed');
+        }
+      };
+    </script>
   </body>
 </html>
