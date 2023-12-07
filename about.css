@@ -75,6 +75,11 @@ header.fixed {
    
  }
 
+ article a{
+   text-decoration: none;
+   text-align: start;
+ }
+
  article p{
     width: 40rem;
     
