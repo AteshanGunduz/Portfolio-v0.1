@@ -70,7 +70,7 @@ header.fixed {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 34rem;
+    height: 50rem;
     color: #1E3D58;
    
  }
@@ -78,6 +78,7 @@ header.fixed {
  article a{
    text-decoration: none;
    text-align: start;
+   margin-top: 1rem;
  }
 
  article p{
