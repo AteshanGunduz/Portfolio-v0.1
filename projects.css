@@ -80,13 +80,13 @@ header.fixed {
  }
 
  .big{
-   height: 150rem;
+   height: 130rem;
    display: flex;
    justify-content: center;
  }
 
  #main{
-   height: 110rem;
+   height: 130rem;
    width: 120rem;
    display: flex;
    justify-content: center;
@@ -219,21 +219,21 @@ footer a:hover{
 
 @media(max-width: 1350px){
    .big{
-      height: 150rem;
+      height: 190rem;
     }
    
     #main{
-      height: 110rem;     
+      height: 190rem;     
     }
 }
 
 @media(max-width: 900px){
    .big{
-      height: 210rem;
+      height: 380rem;
     }
    
     #main{
-      height: 190rem;
+      height: 370rem;
     }
 }
 
@@ -317,11 +317,11 @@ footer a:hover{
       
    }
    .big{
-      height: 210rem;
+      height: 330rem;
     }
    
     #main{
-      height: 170rem;
+      height: 320rem;
 
     }
 
