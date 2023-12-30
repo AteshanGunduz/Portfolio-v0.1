@@ -80,13 +80,13 @@ header.fixed {
  }
 
  .big{
-   height: 110rem;
+   height: 130rem;
    display: flex;
    justify-content: center;
  }
 
  #main{
-   height: 100rem;
+   height: 110rem;
    width: 120rem;
    display: flex;
    justify-content: center;
