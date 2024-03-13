@@ -90,9 +90,10 @@ header.fixed {
    width: 120rem;
    display: flex;
    justify-content: center;
-   align-content: center;
+   align-content: flex-start;
    flex-wrap: wrap;
-   grid-gap: 1.5rem
+   grid-gap: 1.5rem;
+   margin-top: 5rem
  }
 
  

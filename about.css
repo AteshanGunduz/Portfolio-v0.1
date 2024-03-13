@@ -75,6 +75,12 @@ header.fixed {
    
  }
 
+ .liinks{
+   display: flex;
+   flex-direction: column;
+   
+ }
+
  article a{
    text-decoration: none;
    text-align: start;
